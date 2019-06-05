@@ -10,23 +10,24 @@ print("Rock, Paper,Scissors, Shoot!") # you can also comment to the right
 user_choice = input("Please choose one of the following options: 'rock', 'paper', or 'scissors' (without the quotes)")
 
 print("--------------")
-print("YOU CHOSE:", user_choice)
+print("YOUR CHOICE:", user_choice)
 
 
 # validate inputs
 
-if user_choice not in ["rock", "paper", "scissors"]:
+options = ["rock", "paper", "scissors"]
+
+if user_choice not in options:
     print("INVALID SELECTION, PLEASE TRY AGAIN")
     exit()
 
 
 # generate computer selection
 
-print("GENERATING...")
-
-computer_choice = random.choice(["rock", "paper", "scissors"])
+computer_choice = random.choice(options)
 
 print("--------------")
+print("GENERATING...")
 print("COMPUTER CHOICE:", computer_choice)
 
 # determine the winner
