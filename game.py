@@ -11,7 +11,6 @@ user_choice = input("Please choose one of the following options: 'rock', 'paper'
 print("--------------")
 print("YOUR CHOICE:", user_choice)
 
-
 # validate inputs
 
 options = ["rock", "paper", "scissors"]
@@ -19,7 +18,6 @@ options = ["rock", "paper", "scissors"]
 if user_choice not in options:
     print("INVALID SELECTION, PLEASE TRY AGAIN")
     exit()
-
 
 # generate computer selection
 
@@ -58,5 +56,4 @@ elif user_choice == "scissors" and computer_choice == "paper":
     print("YOU WIN")
 
 # display final outputs / outcomes
-
 
