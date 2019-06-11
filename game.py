@@ -5,6 +5,9 @@ import random
 def my_message():
     return "HELLO"
 
+def determine_winner(u, c):
+    return "rock"
+
 # only if this script is exectued from the command line 
 if __name__ == "__main__":
 
